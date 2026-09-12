@@ -6,540 +6,722 @@
 
 <title>SRS Enterprises | Gaura Electric Vehicles | Salem</title>
 
-<meta name="description" content="SRS Enterprises - Gaura Electric Vehicle Showroom in Kondalampatti, Salem. Explore Gaura G6, Sniper and Warrior electric vehicles.">
+<meta name="description"
+content="SRS Enterprises - Gaura Electric Vehicle showroom in Kondalampatti, Salem. Explore Gaura G6, Sniper and Warrior electric vehicles.">
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #0b0b0b;
-    color: #ffffff;
-    line-height: 1.6;
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#080808;
+    color:#fff;
+    line-height:1.6;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+a{
+    text-decoration:none;
+    color:inherit;
 }
 
-.container {
-    width: 92%;
-    max-width: 1150px;
-    margin: auto;
+img{
+    max-width:100%;
+}
+
+.container{
+    width:92%;
+    max-width:1180px;
+    margin:auto;
 }
 
 /* ================= HEADER ================= */
 
-header {
-    background: #050505;
-    border-bottom: 2px solid #e00000;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#050505;
+    border-bottom:2px solid #e00000;
+    box-shadow:0 3px 15px rgba(0,0,0,.6);
 }
 
-.navbar {
-    min-height: 78px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
+.navbar{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
 }
 
-.logo-area {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
 }
 
-.logo-area img {
-    width: 58px;
-    height: 58px;
-    object-fit: contain;
-    border-radius: 8px;
-    background: white;
+.logo-area img{
+    width:56px;
+    height:56px;
+    object-fit:contain;
+    background:#fff;
+    border-radius:7px;
 }
 
-.logo-text h1 {
-    font-size: 22px;
-    color: #ffffff;
+.logo-text h1{
+    font-size:22px;
+    line-height:1.2;
 }
 
-.logo-text span {
-    color: #e00000;
-    font-size: 12px;
-    font-weight: bold;
+.logo-text span{
+    color:#e00000;
+    font-size:11px;
+    font-weight:bold;
+    letter-spacing:1px;
 }
 
-nav {
-    display: flex;
-    gap: 22px;
-    align-items: center;
+nav{
+    display:flex;
+    align-items:center;
+    gap:20px;
 }
 
-nav a {
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 14px;
+nav a{
+    font-size:14px;
+    font-weight:bold;
 }
 
-nav a:hover {
-    color: #ff2020;
+nav a:hover{
+    color:#ff2020;
 }
 
-.lang-btn {
-    background: #e00000;
-    color: white;
-    border: none;
-    padding: 9px 13px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
+.lang-btn{
+    border:1px solid #e00000;
+    background:#e00000;
+    color:#fff;
+    padding:9px 13px;
+    border-radius:5px;
+    font-weight:bold;
+    cursor:pointer;
 }
 
 /* ================= HERO ================= */
 
-.hero {
-    min-height: 650px;
-    display: flex;
-    align-items: center;
+.hero{
+    min-height:680px;
+    display:flex;
+    align-items:center;
     background:
-        radial-gradient(circle at 75% 50%, #5e0000 0%, #180000 28%, #080808 65%);
-    padding: 60px 0;
+    radial-gradient(circle at 75% 45%,#5b0000 0%,#210000 25%,#080808 65%);
+    overflow:hidden;
 }
 
-.hero-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 40px;
+.hero-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:35px;
 }
 
-.hero-text small {
-    color: #ff2222;
-    font-weight: bold;
-    letter-spacing: 2px;
+.hero-small{
+    color:#ff2020;
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing:2px;
 }
 
-.hero-text h2 {
-    font-size: 52px;
-    line-height: 1.05;
-    margin: 15px 0;
+.hero h2{
+    font-size:54px;
+    line-height:1.05;
+    margin:14px 0 20px;
 }
 
-.hero-text h2 span {
-    color: #e00000;
+.hero h2 span{
+    color:#e00000;
 }
 
-.hero-text p {
-    color: #dddddd;
-    font-size: 18px;
-    max-width: 550px;
+.hero p{
+    color:#ddd;
+    font-size:18px;
+    max-width:570px;
 }
 
-.hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 28px;
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:28px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 13px 21px;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: 0.2s;
+.btn{
+    display:inline-block;
+    padding:13px 20px;
+    border-radius:6px;
+    font-weight:bold;
+    transition:.2s;
+    text-align:center;
 }
 
-.btn-red {
-    background: #e00000;
-    color: white;
+.btn-red{
+    background:#e00000;
+    color:#fff;
 }
 
-.btn-red:hover {
-    background: #ff2424;
-    transform: translateY(-2px);
+.btn-red:hover{
+    background:#ff2424;
+    transform:translateY(-2px);
 }
 
-.btn-outline {
-    border: 2px solid #e00000;
-    color: white;
+.btn-outline{
+    border:2px solid #e00000;
+    color:#fff;
 }
 
-.btn-outline:hover {
-    background: #e00000;
+.btn-outline:hover{
+    background:#e00000;
 }
 
-.hero-image {
-    text-align: center;
+.hero-image{
+    text-align:center;
 }
 
-.hero-image img {
-    width: 100%;
-    max-width: 570px;
-    max-height: 430px;
-    object-fit: contain;
-    filter: drop-shadow(0 20px 30px rgba(224,0,0,0.35));
+.hero-image img{
+    width:100%;
+    max-width:590px;
+    max-height:450px;
+    object-fit:contain;
+    filter:drop-shadow(0 20px 30px rgba(224,0,0,.35));
 }
 
-/* ================= SECTION ================= */
+/* ================= GENERAL SECTIONS ================= */
 
-section {
-    padding: 75px 0;
+section{
+    padding:75px 0;
 }
 
-.section-title {
-    text-align: center;
-    margin-bottom: 45px;
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
 }
 
-.section-title h2 {
-    font-size: 36px;
+.section-title h2{
+    font-size:38px;
+    line-height:1.2;
 }
 
-.section-title h2 span {
-    color: #e00000;
+.section-title h2 span{
+    color:#e00000;
 }
 
-.section-title p {
-    color: #aaaaaa;
-    margin-top: 8px;
+.section-title p{
+    color:#aaa;
+    margin-top:8px;
+}
+
+/* ================= QUICK CONTACT ================= */
+
+.quick-contact{
+    background:#111;
+    border-bottom:1px solid #292929;
+}
+
+.quick-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.quick-card{
+    background:#181818;
+    border:1px solid #333;
+    border-radius:9px;
+    padding:20px;
+    text-align:center;
+}
+
+.quick-card strong{
+    display:block;
+    color:#e00000;
+    font-size:20px;
+    margin-bottom:5px;
+}
+
+.quick-card span{
+    color:#ccc;
 }
 
 /* ================= MODELS ================= */
 
-.models {
-    background: #111111;
+.models{
+    background:#0c0c0c;
 }
 
-.model-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+.model-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
 }
 
-.model-card {
-    background: #191919;
-    border: 1px solid #333333;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: 0.25s;
+.model-card{
+    background:#161616;
+    border:1px solid #333;
+    border-radius:12px;
+    overflow:hidden;
+    transition:.25s;
 }
 
-.model-card:hover {
-    transform: translateY(-7px);
-    border-color: #e00000;
-    box-shadow: 0 15px 35px rgba(224,0,0,0.18);
+.model-card:hover{
+    transform:translateY(-7px);
+    border-color:#e00000;
+    box-shadow:0 15px 35px rgba(224,0,0,.18);
 }
 
-.model-image {
-    background: #eeeeee;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px;
+.model-image{
+    height:255px;
+    background:#eee;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:12px;
 }
 
-.model-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.model-image img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
 }
 
-.model-info {
-    padding: 22px;
+.model-info{
+    padding:23px;
 }
 
-.model-info h3 {
-    color: #ffffff;
-    font-size: 26px;
-    margin-bottom: 15px;
+.model-info h3{
+    font-size:27px;
+    margin-bottom:15px;
 }
 
-.spec {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    padding: 10px 0;
-    border-bottom: 1px solid #333333;
+.model-tag{
+    display:inline-block;
+    background:#e00000;
+    color:#fff;
+    padding:4px 9px;
+    border-radius:4px;
+    font-size:11px;
+    font-weight:bold;
+    margin-bottom:12px;
 }
 
-.spec:last-child {
-    border-bottom: none;
+.spec{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    padding:10px 0;
+    border-bottom:1px solid #303030;
 }
 
-.spec-label {
-    color: #aaaaaa;
+.spec-label{
+    color:#999;
 }
 
-.spec-value {
-    color: #ffffff;
-    font-weight: bold;
-    text-align: right;
+.spec-value{
+    color:#fff;
+    font-weight:bold;
+    text-align:right;
 }
 
-.model-btn {
-    display: block;
-    text-align: center;
-    background: #e00000;
-    padding: 12px;
-    border-radius: 5px;
-    margin-top: 18px;
-    font-weight: bold;
+.model-btn{
+    display:block;
+    background:#e00000;
+    text-align:center;
+    padding:12px;
+    border-radius:5px;
+    margin-top:18px;
+    font-weight:bold;
 }
 
-.model-btn:hover {
-    background: #ff2424;
+.model-btn:hover{
+    background:#ff2222;
+}
+
+.disclaimer{
+    color:#777;
+    text-align:center;
+    font-size:12px;
+    margin-top:25px;
+}
+
+/* ================= WHY VISIT ================= */
+
+.why{
+    background:
+    linear-gradient(rgba(20,0,0,.94),rgba(5,5,5,.97));
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.why-card{
+    background:#151515;
+    border:1px solid #333;
+    border-top:3px solid #e00000;
+    border-radius:9px;
+    padding:25px 20px;
+    text-align:center;
+    transition:.2s;
+}
+
+.why-card:hover{
+    transform:translateY(-5px);
+    border-color:#e00000;
+}
+
+.why-icon{
+    font-size:32px;
+    margin-bottom:12px;
+}
+
+.why-card h3{
+    font-size:18px;
+    margin-bottom:8px;
+}
+
+.why-card p{
+    color:#aaa;
+    font-size:14px;
 }
 
 /* ================= ABOUT ================= */
 
-.about {
-    background: #080808;
+.about{
+    background:#111;
 }
 
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 45px;
-    align-items: center;
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+    align-items:stretch;
 }
 
-.about-box {
-    background: #151515;
-    border-left: 4px solid #e00000;
-    padding: 30px;
-    border-radius: 8px;
+.about-box{
+    background:#181818;
+    border-left:4px solid #e00000;
+    padding:30px;
+    border-radius:8px;
 }
 
-.about-box h3 {
-    font-size: 28px;
-    margin-bottom: 15px;
+.about-box h3{
+    font-size:28px;
+    margin-bottom:15px;
 }
 
-.about-box p {
-    color: #cccccc;
-    margin-bottom: 12px;
+.about-box p{
+    color:#ccc;
+    margin-bottom:13px;
 }
 
-.features {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
+.features{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
 }
 
-.feature {
-    background: #151515;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #292929;
+.feature{
+    background:#181818;
+    border:1px solid #333;
+    padding:20px;
+    border-radius:8px;
 }
 
-.feature strong {
-    display: block;
-    color: #e00000;
-    font-size: 18px;
-    margin-bottom: 5px;
+.feature strong{
+    display:block;
+    color:#e00000;
+    margin-bottom:5px;
+    font-size:18px;
 }
 
-.feature span {
-    color: #cccccc;
-    font-size: 14px;
+/* ================= LANGUAGE ================= */
+
+.tamil-section{
+    background:#080808;
 }
 
-/* ================= TAMIL ================= */
-
-.tamil-section {
-    background: #111111;
+.language-box{
+    background:#151515;
+    border:1px solid #333;
+    border-radius:10px;
+    padding:30px;
+    text-align:center;
 }
 
-.tamil-box {
-    background: #171717;
-    border: 1px solid #333333;
-    border-radius: 10px;
-    padding: 30px;
-    text-align: center;
+.language-box h3{
+    color:#e00000;
+    font-size:27px;
+    margin-bottom:12px;
 }
 
-.tamil-box h3 {
-    color: #e00000;
-    margin-bottom: 15px;
-    font-size: 28px;
-}
-
-.tamil-box p {
-    color: #dddddd;
-    font-size: 17px;
+.language-box p{
+    color:#ccc;
+    font-size:17px;
 }
 
 /* ================= CONTACT ================= */
 
-.contact {
-    background:
-        linear-gradient(rgba(0,0,0,0.88), rgba(0,0,0,0.92)),
-        #180000;
+.contact{
+    background:#100000;
 }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 35px;
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
 }
 
-.contact-card {
-    background: #151515;
-    border: 1px solid #333333;
-    border-radius: 10px;
-    padding: 30px;
+.contact-card{
+    background:#151515;
+    border:1px solid #333;
+    border-radius:10px;
+    padding:30px;
 }
 
-.contact-card h3 {
-    color: #e00000;
-    font-size: 25px;
-    margin-bottom: 20px;
+.contact-card h3{
+    color:#e00000;
+    font-size:25px;
+    margin-bottom:20px;
 }
 
-.contact-item {
-    margin-bottom: 17px;
+.contact-item{
+    margin-bottom:17px;
 }
 
-.contact-item strong {
-    display: block;
-    color: #ffffff;
-    margin-bottom: 4px;
+.contact-item strong{
+    display:block;
+    margin-bottom:4px;
 }
 
-.contact-item span,
-.contact-item a {
-    color: #cccccc;
+.contact-item a,
+.contact-item span{
+    color:#ccc;
 }
 
-.contact-item a:hover {
-    color: #ff2222;
+.contact-item a:hover{
+    color:#ff2222;
 }
 
-.contact-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
+.contact-buttons{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    margin-top:22px;
 }
 
-.map {
-    width: 100%;
-    height: 350px;
-    border: 0;
-    border-radius: 8px;
+.map{
+    width:100%;
+    height:330px;
+    border:0;
+    border-radius:8px;
+}
+
+.directions{
+    margin-top:15px;
+    text-align:center;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    background:#e00000;
+    padding:55px 0;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:34px;
+    margin-bottom:8px;
+}
+
+.cta p{
+    margin-bottom:22px;
+}
+
+.cta .btn-outline{
+    border-color:#fff;
+}
+
+.cta .btn-outline:hover{
+    background:#fff;
+    color:#e00000;
 }
 
 /* ================= FOOTER ================= */
 
-footer {
-    background: #050505;
-    border-top: 2px solid #e00000;
-    padding: 28px 0;
-    text-align: center;
+footer{
+    background:#040404;
+    border-top:2px solid #e00000;
+    padding:28px 0;
+    text-align:center;
 }
 
-footer p {
-    color: #999999;
-    font-size: 14px;
+footer p{
+    color:#888;
+    font-size:13px;
 }
 
-footer strong {
-    color: #ffffff;
+footer strong{
+    color:#fff;
 }
 
-footer span {
-    color: #e00000;
+footer span{
+    color:#e00000;
+}
+
+/* ================= FLOATING WHATSAPP ================= */
+
+.whatsapp-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:62px;
+    height:62px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:31px;
+    font-weight:bold;
+    z-index:2000;
+    box-shadow:0 5px 20px rgba(0,0,0,.5);
+    border:3px solid #fff;
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+    0%{
+        box-shadow:0 0 0 0 rgba(37,211,102,.6);
+    }
+    70%{
+        box-shadow:0 0 0 13px rgba(37,211,102,0);
+    }
+    100%{
+        box-shadow:0 0 0 0 rgba(37,211,102,0);
+    }
 }
 
 /* ================= MOBILE ================= */
 
-@media (max-width: 850px) {
+@media(max-width:900px){
 
-    .navbar {
-        flex-wrap: wrap;
-        padding: 12px 0;
+    .navbar{
+        flex-wrap:wrap;
+        padding:10px 0;
     }
 
-    nav {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 14px;
-        padding-bottom: 5px;
+    nav{
+        width:100%;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:13px;
+        padding-bottom:5px;
     }
 
-    .hero {
-        min-height: auto;
-        padding: 55px 0;
+    .hero{
+        min-height:auto;
+        padding:55px 0;
     }
 
-    .hero-content {
-        grid-template-columns: 1fr;
-        text-align: center;
+    .hero-grid{
+        grid-template-columns:1fr;
+        text-align:center;
     }
 
-    .hero-text p {
-        margin: auto;
+    .hero p{
+        margin:auto;
     }
 
-    .hero-buttons {
-        justify-content: center;
+    .hero-buttons{
+        justify-content:center;
     }
 
-    .hero-text h2 {
-        font-size: 40px;
+    .hero-image{
+        order:-1;
     }
 
-    .hero-image {
-        order: -1;
+    .hero h2{
+        font-size:42px;
     }
 
-    .model-grid {
-        grid-template-columns: 1fr;
+    .model-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr 1fr;
     }
 
     .about-grid,
-    .contact-grid {
-        grid-template-columns: 1fr;
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .quick-grid{
+        grid-template-columns:1fr;
     }
 }
 
-@media (max-width: 500px) {
+@media(max-width:520px){
 
-    .logo-text h1 {
-        font-size: 18px;
+    .container{
+        width:94%;
     }
 
-    .logo-area img {
-        width: 48px;
-        height: 48px;
+    .logo-area img{
+        width:48px;
+        height:48px;
     }
 
-    .hero-text h2 {
-        font-size: 34px;
+    .logo-text h1{
+        font-size:18px;
     }
 
-    .section-title h2 {
-        font-size: 29px;
+    .hero h2{
+        font-size:34px;
     }
 
-    .features {
-        grid-template-columns: 1fr;
+    .section-title h2{
+        font-size:29px;
     }
 
-    .model-image {
-        height: 220px;
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    .contact-buttons{
+        grid-template-columns:1fr;
+    }
+
+    .model-image{
+        height:225px;
+    }
+
+    .whatsapp-float{
+        width:56px;
+        height:56px;
+        right:15px;
+        bottom:15px;
+        font-size:28px;
     }
 }
 </style>
@@ -550,25 +732,36 @@ footer span {
 <!-- ================= HEADER ================= -->
 
 <header>
+
 <div class="container navbar">
 
     <a href="#home" class="logo-area">
+
         <img src="gaura-logo.jpg" alt="Gaura Electric Logo">
+
         <div class="logo-text">
             <h1>SRS Enterprises</h1>
             <span>GAURA ELECTRIC VEHICLES</span>
         </div>
+
     </a>
 
     <nav>
+
         <a href="#home">Home</a>
         <a href="#models">Models</a>
+        <a href="#why">Why Us</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <button class="lang-btn" onclick="toggleLanguage()">தமிழ் / EN</button>
+
+        <button class="lang-btn" onclick="toggleLanguage()">
+            தமிழ் / EN
+        </button>
+
     </nav>
 
 </div>
+
 </header>
 
 
@@ -576,41 +769,74 @@ footer span {
 
 <section class="hero" id="home">
 
-<div class="container hero-content">
+<div class="container hero-grid">
 
-    <div class="hero-text">
+    <div>
 
-        <small id="hero-small">GAURA ELECTRIC VEHICLES</small>
+        <div class="hero-small">
+            GAURA ELECTRIC VEHICLES
+        </div>
 
-        <h2 id="hero-title">
+        <h2 id="heroTitle">
             Ride the Future with
             <span>Electric Power</span>
         </h2>
 
-        <p id="hero-description">
+        <p id="heroText">
             Welcome to SRS Enterprises, your Gaura Electric Vehicle showroom
-            in Salem. Explore stylish, reliable and economical electric
+            in Salem. Explore stylish, practical and economical electric
             vehicles for everyday travel.
         </p>
 
         <div class="hero-buttons">
 
-            <a href="#models" class="btn btn-red" id="view-models">
+            <a href="#models" class="btn btn-red" id="heroModels">
                 View Models
             </a>
 
-            <a href="https://wa.me/919677614666?text=Hello%20SRS%20Enterprises%2C%20I%20am%20interested%20in%20Gaura%20Electric%20Vehicles."
-               class="btn btn-outline"
-               target="_blank">
-                WhatsApp Us
+            <a href="#contact" class="btn btn-outline" id="heroContact">
+                Contact Us
             </a>
 
         </div>
 
     </div>
 
+
     <div class="hero-image">
+
         <img src="G6.jpg" alt="Gaura G6 Electric Vehicle">
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ================= QUICK CONTACT ================= -->
+
+<section class="quick-contact">
+
+<div class="container quick-grid">
+
+    <div class="quick-card">
+        <strong>📞 Call Us</strong>
+        <a href="tel:+919677614666">
+            +91 96776 14666
+        </a>
+    </div>
+
+    <div class="quick-card">
+        <strong>📞 Call Us</strong>
+        <a href="tel:+919677263666">
+            +91 96772 63666
+        </a>
+    </div>
+
+    <div class="quick-card">
+        <strong>💬 WhatsApp</strong>
+        <span>Quick vehicle enquiries</span>
     </div>
 
 </div>
@@ -625,38 +851,43 @@ footer span {
 <div class="container">
 
     <div class="section-title">
-        <h2 id="models-title">
+
+        <h2 id="modelsTitle">
             Our <span>Gaura Models</span>
         </h2>
 
-        <p id="models-subtitle">
-            Choose the electric vehicle that suits your needs.
+        <p id="modelsText">
+            Explore our electric vehicle range.
         </p>
+
     </div>
 
 
     <div class="model-grid">
+
 
         <!-- G6 -->
 
         <div class="model-card">
 
             <div class="model-image">
-                <img src="G6.jpg" alt="Gaura G6 Electric Vehicle">
+                <img src="G6.jpg" alt="Gaura G6">
             </div>
 
             <div class="model-info">
+
+                <div class="model-tag">GAURA EV</div>
 
                 <h3>Gaura G6</h3>
 
                 <div class="spec">
                     <span class="spec-label">Range</span>
-                    <span class="spec-value">120 KM True Range</span>
+                    <span class="spec-value">120+ KM</span>
                 </div>
 
                 <div class="spec">
                     <span class="spec-label">Battery</span>
-                    <span class="spec-value">LFP - 3.3 kWh</span>
+                    <span class="spec-value">LFP • 3.3 kWh</span>
                 </div>
 
                 <div class="spec">
@@ -665,17 +896,19 @@ footer span {
                 </div>
 
                 <div class="spec">
-                    <span class="spec-label">Top Speed</span>
-                    <span class="spec-value">Up to 65 km/h</span>
+                    <span class="spec-label">Type</span>
+                    <span class="spec-value">Electric Scooter</span>
                 </div>
 
-                <a href="https://wa.me/919677614666?text=Hello%20SRS%20Enterprises%2C%20I%20am%20interested%20in%20Gaura%20G6."
-                   target="_blank"
-                   class="model-btn">
+                <a
+                href="https://wa.me/919677614666?text=Hello%20SRS%20Enterprises%2C%20I%20am%20interested%20in%20Gaura%20G6."
+                target="_blank"
+                class="model-btn">
                     Enquire About G6
                 </a>
 
             </div>
+
         </div>
 
 
@@ -684,10 +917,12 @@ footer span {
         <div class="model-card">
 
             <div class="model-image">
-                <img src="Sniper.jpg" alt="Gaura Sniper Electric Vehicle">
+                <img src="Sniper.jpg" alt="Gaura Sniper 5G">
             </div>
 
             <div class="model-info">
+
+                <div class="model-tag">GAURA EV</div>
 
                 <h3>Gaura Sniper 5G</h3>
 
@@ -698,7 +933,7 @@ footer span {
 
                 <div class="spec">
                     <span class="spec-label">Battery</span>
-                    <span class="spec-value">SLA / LFP</span>
+                    <span class="spec-value">SLA / LFP*</span>
                 </div>
 
                 <div class="spec">
@@ -707,17 +942,19 @@ footer span {
                 </div>
 
                 <div class="spec">
-                    <span class="spec-label">Top Speed</span>
-                    <span class="spec-value">25 km/h</span>
+                    <span class="spec-label">Type</span>
+                    <span class="spec-value">Electric Scooter</span>
                 </div>
 
-                <a href="https://wa.me/919677614666?text=Hello%20SRS%20Enterprises%2C%20I%20am%20interested%20in%20Gaura%20Sniper%205G."
-                   target="_blank"
-                   class="model-btn">
+                <a
+                href="https://wa.me/919677263666?text=Hello%20SRS%20Enterprises%2C%20I%20am%20interested%20in%20Gaura%20Sniper%205G."
+                target="_blank"
+                class="model-btn">
                     Enquire About Sniper
                 </a>
 
             </div>
+
         </div>
 
 
@@ -726,10 +963,12 @@ footer span {
         <div class="model-card">
 
             <div class="model-image">
-                <img src="Warrior.jpg" alt="Gaura Warrior Electric Vehicle">
+                <img src="Warrior.jpg" alt="Gaura Warrior 5G">
             </div>
 
             <div class="model-info">
+
+                <div class="model-tag">GAURA EV</div>
 
                 <h3>Gaura Warrior 5G</h3>
 
@@ -740,7 +979,7 @@ footer span {
 
                 <div class="spec">
                     <span class="spec-label">Battery</span>
-                    <span class="spec-value">SLA / LFP</span>
+                    <span class="spec-value">SLA / LFP*</span>
                 </div>
 
                 <div class="spec">
@@ -749,25 +988,176 @@ footer span {
                 </div>
 
                 <div class="spec">
-                    <span class="spec-label">Top Speed</span>
-                    <span class="spec-value">25 km/h</span>
+                    <span class="spec-label">Type</span>
+                    <span class="spec-value">Electric Scooter</span>
                 </div>
 
-                <a href="https://wa.me/919677614666?text=Hello%20SRS%20Enterprises%2C%20I%20am%20interested%20in%20Gaura%20Warrior%205G."
-                   target="_blank"
-                   class="model-btn">
+                <a
+                href="https://wa.me/919677614666?text=Hello%20SRS%20Enterprises%2C%20I%20am%20interested%20in%20Gaura%20Warrior%205G."
+                target="_blank"
+                class="model-btn">
                     Enquire About Warrior
                 </a>
 
             </div>
+
         </div>
 
     </div>
 
-    <p style="text-align:center;color:#888;font-size:13px;margin-top:25px;">
-        *Range and charging time can vary depending on the battery variant,
-        rider weight, riding conditions and road conditions.
+
+    <p class="disclaimer">
+        *Range, battery and charging time may vary according to the battery
+        variant, rider weight, road conditions and riding conditions.
     </p>
+
+</div>
+
+</section>
+
+
+<!-- ================= WHY VISIT US ================= -->
+
+<section class="why" id="why">
+
+<div class="container">
+
+    <div class="section-title">
+
+        <h2 id="whyTitle">
+            Why <span>Visit Us?</span>
+        </h2>
+
+        <p id="whySubtitle">
+            We want your EV buying experience to be simple and comfortable.
+        </p>
+
+    </div>
+
+
+    <div class="why-grid">
+
+
+        <div class="why-card">
+
+            <div class="why-icon">🏪</div>
+
+            <h3 id="why1Title">
+                Local Showroom
+            </h3>
+
+            <p id="why1Text">
+                Conveniently located at Kondalampatti, Salem.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">🛵</div>
+
+            <h3 id="why2Title">
+                Multiple Models
+            </h3>
+
+            <p id="why2Text">
+                Explore Gaura G6, Sniper and Warrior.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">💬</div>
+
+            <h3 id="why3Title">
+                Easy Enquiry
+            </h3>
+
+            <p id="why3Text">
+                Contact us by phone or WhatsApp for quick information.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">📍</div>
+
+            <h3 id="why4Title">
+                Easy to Find
+            </h3>
+
+            <p id="why4Text">
+                Located on NH7, Bangalore Main Road, Kondalampatti.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">🔋</div>
+
+            <h3 id="why5Title">
+                Know Your Battery
+            </h3>
+
+            <p id="why5Text">
+                Learn about battery types and charging requirements.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">💰</div>
+
+            <h3 id="why6Title">
+                Everyday Savings
+            </h3>
+
+            <p id="why6Text">
+                Explore electric mobility for economical daily travel.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">🌱</div>
+
+            <h3 id="why7Title">
+                Electric Mobility
+            </h3>
+
+            <p id="why7Text">
+                Discover a cleaner alternative for everyday transportation.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">🤝</div>
+
+            <h3 id="why8Title">
+                Personal Assistance
+            </h3>
+
+            <p id="why8Text">
+                Contact our showroom to understand the available options.
+            </p>
+
+        </div>
+
+    </div>
 
 </div>
 
@@ -782,12 +1172,12 @@ footer span {
 
     <div class="section-title">
 
-        <h2 id="about-title">
+        <h2 id="aboutTitle">
             About <span>SRS Enterprises</span>
         </h2>
 
-        <p id="about-subtitle">
-            Your local Gaura Electric Vehicle showroom in Salem.
+        <p id="aboutSubtitle">
+            Your Gaura Electric Vehicle showroom in Salem.
         </p>
 
     </div>
@@ -797,23 +1187,23 @@ footer span {
 
         <div class="about-box">
 
-            <h3 id="about-heading">
+            <h3 id="aboutHeading">
                 Electric Mobility for Salem
             </h3>
 
-            <p id="about-text-1">
-                SRS Enterprises is a Gaura Electric Vehicle showroom located
-                at Kondalampatti, Salem.
+            <p id="about1">
+                SRS Enterprises is a Gaura Electric Vehicle showroom
+                located at Kondalampatti, Salem.
             </p>
 
-            <p id="about-text-2">
-                We offer Gaura electric vehicles designed for comfortable,
-                economical and environmentally friendly everyday travel.
+            <p id="about2">
+                We showcase Gaura electric vehicles for customers looking
+                for practical and economical everyday transportation.
             </p>
 
-            <p id="about-text-3">
-                Visit our showroom to explore the available models and
-                choose the vehicle that fits your requirements.
+            <p id="about3">
+                Contact us to learn more about the available models,
+                battery variants and charging requirements.
             </p>
 
         </div>
@@ -823,22 +1213,22 @@ footer span {
 
             <div class="feature">
                 <strong>Gaura EV</strong>
-                <span>Official Gaura electric vehicle models.</span>
+                <span>Explore Gaura electric vehicle models.</span>
             </div>
 
             <div class="feature">
                 <strong>Salem</strong>
-                <span>Conveniently located at Kondalampatti.</span>
+                <span>Showroom at Kondalampatti.</span>
             </div>
 
             <div class="feature">
-                <strong>Test & Enquiry</strong>
-                <span>Contact us for model availability.</span>
+                <strong>Phone & WhatsApp</strong>
+                <span>Easy ways to contact our showroom.</span>
             </div>
 
             <div class="feature">
-                <strong>WhatsApp</strong>
-                <span>Quick enquiry directly with our showroom.</span>
+                <strong>Directions</strong>
+                <span>Open Google Maps and find us easily.</span>
             </div>
 
         </div>
@@ -856,7 +1246,7 @@ footer span {
 
 <div class="container">
 
-    <div class="tamil-box">
+    <div class="language-box">
 
         <h3>தமிழில் எங்களைப் பற்றி</h3>
 
@@ -884,12 +1274,12 @@ footer span {
 
     <div class="section-title">
 
-        <h2 id="contact-title">
+        <h2 id="contactTitle">
             Contact <span>SRS Enterprises</span>
         </h2>
 
-        <p id="contact-subtitle">
-            Visit us or contact us on phone and WhatsApp.
+        <p id="contactSubtitle">
+            We are ready to help you with your EV enquiry.
         </p>
 
     </div>
@@ -897,13 +1287,16 @@ footer span {
 
     <div class="contact-grid">
 
+
+        <!-- CONTACT DETAILS -->
+
         <div class="contact-card">
 
-            <h3>Showroom Details</h3>
+            <h3>Contact Us</h3>
 
             <div class="contact-item">
 
-                <strong>Address</strong>
+                <strong>Showroom Address</strong>
 
                 <span>
                     #251/3, NH7, Bangalore Main Road,<br>
@@ -916,7 +1309,7 @@ footer span {
 
             <div class="contact-item">
 
-                <strong>Phone 1</strong>
+                <strong>Mobile 1</strong>
 
                 <a href="tel:+919677614666">
                     +91 96776 14666
@@ -927,7 +1320,7 @@ footer span {
 
             <div class="contact-item">
 
-                <strong>Phone 2</strong>
+                <strong>Mobile 2</strong>
 
                 <a href="tel:+919677263666">
                     +91 96772 63666
@@ -938,15 +1331,35 @@ footer span {
 
             <div class="contact-buttons">
 
-                <a href="tel:+919677614666"
-                   class="btn btn-red">
-                    Call Now
+                <a
+                href="tel:+919677614666"
+                class="btn btn-red">
+                    📞 Contact Us - English
                 </a>
 
-                <a href="https://wa.me/919677614666?text=Hello%20SRS%20Enterprises%2C%20I%20would%20like%20to%20know%20about%20Gaura%20Electric%20Vehicles."
-                   target="_blank"
-                   class="btn btn-outline">
-                    WhatsApp
+                <a
+                href="tel:+919677263666"
+                class="btn btn-outline">
+                    📞 Contact Us - தமிழ்
+                </a>
+
+            </div>
+
+
+            <div class="contact-buttons">
+
+                <a
+                href="https://wa.me/919677614666?text=Hello%20SRS%20Enterprises%2C%20I%20would%20like%20to%20know%20about%20Gaura%20Electric%20Vehicles."
+                target="_blank"
+                class="btn btn-red">
+                    WhatsApp 1
+                </a>
+
+                <a
+                href="https://wa.me/919677263666?text=வணக்கம்%20SRS%20Enterprises%2C%20Gaura%20Electric%20Vehicles%20பற்றி%20தெரிந்து%20கொள்ள%20விரும்புகிறேன்."
+                target="_blank"
+                class="btn btn-outline">
+                    WhatsApp 2
                 </a>
 
             </div>
@@ -954,23 +1367,25 @@ footer span {
         </div>
 
 
+        <!-- MAP -->
+
         <div class="contact-card">
 
-            <h3>Find Our Showroom</h3>
+            <h3>Visit Our Showroom</h3>
 
             <iframe
-                class="map"
-                src="https://www.google.com/maps?q=251%2F3%2C%20NH7%2C%20Bangalore%20Main%20Road%2C%20Kondalampatti%2C%20Salem%20636010&output=embed"
-                loading="lazy">
+            class="map"
+            src="https://www.google.com/maps?q=251%2F3%2C%20NH7%2C%20Bangalore%20Main%20Road%2C%20Kondalampatti%2C%20Salem%20636010&output=embed"
+            loading="lazy">
             </iframe>
 
-            <div style="margin-top:15px;text-align:center;">
+            <div class="directions">
 
                 <a
-                    href="https://maps.app.goo.gl/n9bvvpDfbMXmH4yt9?g_st=ac"
-                    target="_blank"
-                    class="btn btn-red">
-                    Get Directions
+                href="https://maps.app.goo.gl/n9bvvpDfbMXmH4yt9?g_st=ac"
+                target="_blank"
+                class="btn btn-red">
+                    📍 Get Directions
                 </a>
 
             </div>
@@ -978,6 +1393,33 @@ footer span {
         </div>
 
     </div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FINAL CTA ================= -->
+
+<section class="cta">
+
+<div class="container">
+
+    <h2 id="ctaTitle">
+        Ready to Go Electric?
+    </h2>
+
+    <p id="ctaText">
+        Contact SRS Enterprises and explore Gaura Electric Vehicles.
+    </p>
+
+    <a
+    href="https://wa.me/919677614666?text=Hello%20SRS%20Enterprises%2C%20I%20would%20like%20to%20know%20more%20about%20your%20Gaura%20Electric%20Vehicles."
+    target="_blank"
+    class="btn btn-outline"
+    id="ctaButton">
+        Chat on WhatsApp
+    </a>
 
 </div>
 
@@ -995,7 +1437,7 @@ footer span {
         Gaura Electric Vehicle Showroom, Salem
     </p>
 
-    <p style="margin-top:7px;">
+    <p style="margin-top:6px;">
         <span>Ride Electric. Ride Smart.</span>
     </p>
 
@@ -1004,106 +1446,241 @@ footer span {
 </footer>
 
 
+<!-- ================= FLOATING WHATSAPP ================= -->
+
+<a
+href="https://wa.me/919677614666?text=Hello%20SRS%20Enterprises%2C%20I%20am%20interested%20in%20Gaura%20Electric%20Vehicles."
+target="_blank"
+class="whatsapp-float"
+aria-label="Chat on WhatsApp">
+    ☎
+</a>
+
+
 <!-- ================= LANGUAGE SCRIPT ================= -->
 
 <script>
 
-let tamil = false;
+let tamilMode = false;
 
-function toggleLanguage() {
+function toggleLanguage(){
 
-    tamil = !tamil;
+    tamilMode = !tamilMode;
 
-    if (tamil) {
+    if(tamilMode){
 
-        document.getElementById("hero-small").innerText =
-            "GAURA ELECTRIC VEHICLES";
+        document.getElementById("heroTitle").innerHTML =
+        "மின்சார சக்தியுடன் <span>எதிர்கால பயணம்</span>";
 
-        "hero-title").innerHTML =
-            "மின்சார சக்தியுடன் <span>எதிர்கால பயணம்</span>";
+        document.getElementById("heroText").innerText =
+        "SRS Enterprises சேலம் கொண்டலாம்பட்டியில் உள்ள Gaura Electric Vehicle showroom ஆகும். தினசரி பயணத்திற்கு ஏற்ற மின்சார வாகனங்களைப் பற்றி தெரிந்து கொள்ளுங்கள்.";
 
-        document.getElementById("hero-description").innerText =
-            "SRS Enterprises சேலம் கொண்டலாம்பட்டியில் உள்ள Gaura Electric Vehicle showroom. தினசரி பயன்பாட்டிற்கு ஏற்ற நம்பகமான மற்றும் சிக்கனமான மின்சார வாகனங்களை அறிந்து கொள்ளுங்கள்.";
+        document.getElementById("heroModels").innerText =
+        "மாடல்களை பார்க்க";
 
-        document.getElementById("view-models").innerText =
-            "மாடல்களை பார்க்க";
+        document.getElementById("heroContact").innerText =
+        "தொடர்பு கொள்ளுங்கள்";
 
-        document.getElementById("models-title").innerHTML =
-            "எங்கள் <span>Gaura மாடல்கள்</span>";
+        document.getElementById("modelsTitle").innerHTML =
+        "எங்கள் <span>Gaura மாடல்கள்</span>";
 
-        document.getElementById("models-subtitle").innerText =
-            "உங்கள் தேவைக்கு ஏற்ற மின்சார வாகனத்தை தேர்வு செய்யுங்கள்.";
+        document.getElementById("modelsText").innerText =
+        "உங்கள் தேவைக்கு ஏற்ற மின்சார வாகனத்தை தேர்வு செய்யுங்கள்.";
 
-        document.getElementById("about-title").innerHTML =
-            "எங்களைப் <span>பற்றி</span>";
+        document.getElementById("whyTitle").innerHTML =
+        "ஏன் <span>எங்களை சந்திக்க வேண்டும்?</span>";
 
-        document.getElementById("about-subtitle").innerText =
-            "சேலம் கொண்டலாம்பட்டியில் உள்ள உங்கள் Gaura Electric Vehicle showroom.";
+        document.getElementById("whySubtitle").innerText =
+        "உங்கள் EV வாங்கும் அனுபவத்தை எளிமையாகவும் வசதியாகவும் செய்ய நாங்கள் விரும்புகிறோம்.";
 
-        document.getElementById("about-heading").innerText =
-            "சேலத்திற்கான மின்சார பயணம்";
+        document.getElementById("why1Title").innerText =
+        "உள்ளூர் Showroom";
 
-        document.getElementById("about-text-1").innerText =
-            "SRS Enterprises என்பது சேலம் கொண்டலாம்பட்டியில் உள்ள Gaura Electric Vehicle showroom ஆகும்.";
+        document.getElementById("why1Text").innerText =
+        "சேலம் கொண்டலாம்பட்டியில் வசதியான இடம்.";
 
-        document.getElementById("about-text-2").innerText =
-            "வசதியான, சிக்கனமான மற்றும் சுற்றுச்சூழலுக்கு ஏற்ற தினசரி பயணத்திற்கான Gaura மின்சார வாகனங்களை நாங்கள் வழங்குகிறோம்.";
+        document.getElementById("why2Title").innerText =
+        "பல மாடல்கள்";
 
-        document.getElementById("about-text-3").innerText =
-            "உங்கள் தேவைக்கு ஏற்ற மாடலை தேர்வு செய்ய எங்கள் showroom-ஐ தொடர்பு கொள்ளுங்கள்.";
+        document.getElementById("why2Text").innerText =
+        "Gaura G6, Sniper மற்றும் Warrior மாடல்களைப் பாருங்கள்.";
 
-        document.getElementById("contact-title").innerHTML =
-            "தொடர்பு <span>கொள்ளுங்கள்</span>";
+        document.getElementById("why3Title").innerText =
+        "எளிய தொடர்பு";
 
-        document.getElementById("contact-subtitle").innerText =
-            "எங்களை நேரில் சந்திக்கலாம் அல்லது தொலைபேசி மற்றும் WhatsApp மூலம் தொடர்பு கொள்ளலாம்.";
+        document.getElementById("why3Text").innerText =
+        "தொலைபேசி அல்லது WhatsApp மூலம் எங்களை தொடர்பு கொள்ளலாம்.";
 
-    } else {
+        document.getElementById("why4Title").innerText =
+        "எளிதாக கண்டுபிடிக்கலாம்";
 
-        document.getElementById("hero-small").innerText =
-            "GAURA ELECTRIC VEHICLES";
+        document.getElementById("why4Text").innerText =
+        "NH7 Bangalore Main Road, Kondalampatti.";
 
-        document.getElementById("hero-title").innerHTML =
-            "Ride the Future with <span>Electric Power</span>";
+        document.getElementById("why5Title").innerText =
+        "Battery தகவல்";
 
-        document.getElementById("hero-description").innerText =
-            "Welcome to SRS Enterprises, your Gaura Electric Vehicle showroom in Salem. Explore stylish, reliable and economical electric vehicles for everyday travel.";
+        document.getElementById("why5Text").innerText =
+        "Battery வகை மற்றும் charging தகவல்களை தெரிந்து கொள்ளுங்கள்.";
 
-        document.getElementById("view-models").innerText =
-            "View Models";
+        document.getElementById("why6Title").innerText =
+        "தினசரி சேமிப்பு";
 
-        document.getElementById("models-title").innerHTML =
-            "Our <span>Gaura Models</span>";
+        document.getElementById("why6Text").innerText =
+        "சிக்கனமான தினசரி பயணத்திற்கான மின்சார வாகனங்களைப் பாருங்கள்.";
 
-        document.getElementById("models-subtitle").innerText =
-            "Choose the electric vehicle that suits your needs.";
+        document.getElementById("why7Title").innerText =
+        "மின்சார பயணம்";
 
-        document.getElementById("about-title").innerHTML =
-            "About <span>SRS Enterprises</span>";
+        document.getElementById("why7Text").innerText =
+        "தினசரி போக்குவரத்திற்கான சிறந்த மின்சார மாற்றத்தை அறியுங்கள்.";
 
-        document.getElementById("about-subtitle").innerText =
-            "Your local Gaura Electric Vehicle showroom in Salem.";
+        document.getElementById("why8Title").innerText =
+        "தனிப்பட்ட உதவி";
 
-        document.getElementById("about-heading").innerText =
-            "Electric Mobility for Salem";
+        document.getElementById("why8Text").innerText =
+        "கிடைக்கும் மாடல்கள் பற்றி எங்களிடம் தொடர்பு கொண்டு தெரிந்து கொள்ளுங்கள்.";
 
-        document.getElementById("about-text-1").innerText =
-            "SRS Enterprises is a Gaura Electric Vehicle showroom located at Kondalampatti, Salem.";
+        document.getElementById("aboutTitle").innerHTML =
+        "SRS Enterprises <span>பற்றி</span>";
 
-        document.getElementById("about-text-2").innerText =
-            "We offer Gaura electric vehicles designed for comfortable, economical and environmentally friendly everyday travel.";
+        document.getElementById("aboutSubtitle").innerText =
+        "சேலத்தில் உள்ள உங்கள் Gaura Electric Vehicle showroom.";
 
-        document.getElementById("about-text-3").innerText =
-            "Visit our showroom to explore the available models and choose the vehicle that fits your requirements.";
+        document.getElementById("aboutHeading").innerText =
+        "சேலத்திற்கான மின்சார பயணம்";
 
-        document.getElementById("contact-title").innerHTML =
-            "Contact <span>SRS Enterprises</span>";
+        document.getElementById("about1").innerText =
+        "SRS Enterprises என்பது சேலம் கொண்டலாம்பட்டியில் உள்ள Gaura Electric Vehicle showroom ஆகும்.";
 
-        document.getElementById("contact-subtitle").innerText =
-            "Visit us or contact us on phone and WhatsApp.";
+        document.getElementById("about2").innerText =
+        "தினசரி பயணத்திற்கு ஏற்ற நடைமுறை மற்றும் சிக்கனமான Gaura மின்சார வாகனங்களை நாங்கள் அறிமுகப்படுத்துகிறோம்.";
 
+        document.getElementById("about3").innerText =
+        "கிடைக்கும் மாடல்கள், battery வகைகள் மற்றும் charging தகவல்களை அறிய எங்களை தொடர்பு கொள்ளுங்கள்.";
+
+        document.getElementById("contactTitle").innerHTML =
+        "SRS Enterprises-ஐ <span>தொடர்பு கொள்ளுங்கள்</span>";
+
+        document.getElementById("contactSubtitle").innerText =
+        "உங்கள் EV தேவைக்கு உதவ நாங்கள் தயாராக இருக்கிறோம்.";
+
+        document.getElementById("ctaTitle").innerText =
+        "மின்சார பயணத்திற்கு தயாரா?";
+
+        document.getElementById("ctaText").innerText =
+        "SRS Enterprises-ஐ தொடர்பு கொண்டு Gaura Electric Vehicles பற்றி தெரிந்து கொள்ளுங்கள்.";
+
+        document.getElementById("ctaButton").innerText =
+        "WhatsApp மூலம் தொடர்பு கொள்ளுங்கள்";
+
+    }else{
+
+        document.getElementById("heroTitle").innerHTML =
+        "Ride the Future with <span>Electric Power</span>";
+
+        document.getElementById("heroText").innerText =
+        "Welcome to SRS Enterprises, your Gaura Electric Vehicle showroom in Salem. Explore stylish, practical and economical electric vehicles for everyday travel.";
+
+        document.getElementById("heroModels").innerText =
+        "View Models";
+
+        document.getElementById("heroContact").innerText =
+        "Contact Us";
+
+        document.getElementById("modelsTitle").innerHTML =
+        "Our <span>Gaura Models</span>";
+
+        document.getElementById("modelsText").innerText =
+        "Explore our electric vehicle range.";
+
+        document.getElementById("whyTitle").innerHTML =
+        "Why <span>Visit Us?</span>";
+
+        document.getElementById("whySubtitle").innerText =
+        "We want your EV buying experience to be simple and comfortable.";
+
+        document.getElementById("why1Title").innerText =
+        "Local Showroom";
+
+        document.getElementById("why1Text").innerText =
+        "Conveniently located at Kondalampatti, Salem.";
+
+        document.getElementById("why2Title").innerText =
+        "Multiple Models";
+
+        document.getElementById("why2Text").innerText =
+        "Explore Gaura G6, Sniper and Warrior.";
+
+        document.getElementById("why3Title").innerText =
+        "Easy Enquiry";
+
+        document.getElementById("why3Text").innerText =
+        "Contact us by phone or WhatsApp for quick information.";
+
+        document.getElementById("why4Title").innerText =
+        "Easy to Find";
+
+        document.getElementById("why4Text").innerText =
+        "Located on NH7, Bangalore Main Road, Kondalampatti.";
+
+        document.getElementById("why5Title").innerText =
+        "Know Your Battery";
+
+        document.getElementById("why5Text").innerText =
+        "Learn about battery types and charging requirements.";
+
+        document.getElementById("why6Title").innerText =
+        "Everyday Savings";
+
+        document.getElementById("why6Text").innerText =
+        "Explore electric mobility for economical daily travel.";
+
+        document.getElementById("why7Title").innerText =
+        "Electric Mobility";
+
+        document.getElementById("why7Text").innerText =
+        "Discover a cleaner alternative for everyday transportation.";
+
+        document.getElementById("why8Title").innerText =
+        "Personal Assistance";
+
+        document.getElementById("why8Text").innerText =
+        "Contact our showroom to understand the available options.";
+
+        document.getElementById("aboutTitle").innerHTML =
+        "About <span>SRS Enterprises</span>";
+
+        document.getElementById("aboutSubtitle").innerText =
+        "Your Gaura Electric Vehicle showroom in Salem.";
+
+        document.getElementById("aboutHeading").innerText =
+        "Electric Mobility for Salem";
+
+        document.getElementById("about1").innerText =
+        "SRS Enterprises is a Gaura Electric Vehicle showroom located at Kondalampatti, Salem.";
+
+        document.getElementById("about2").innerText =
+        "We showcase Gaura electric vehicles for customers looking for practical and economical everyday transportation.";
+
+        document.getElementById("about3").innerText =
+        "Contact us to learn more about the available models, battery variants and charging requirements.";
+
+        document.getElementById("contactTitle").innerHTML =
+        "Contact <span>SRS Enterprises</span>";
+
+        document.getElementById("contactSubtitle").innerText =
+        "We are ready to help you with your EV enquiry.";
+
+        document.getElementById("ctaTitle").innerText =
+        "Ready to Go Electric?";
+
+        document.getElementById("ctaText").innerText =
+        "Contact SRS Enterprises and explore Gaura Electric Vehicles.";
+
+        document.getElementById("ctaButton").innerText =
+        "Chat on WhatsApp";
     }
-
 }
 
 </script>
